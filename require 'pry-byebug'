@@ -1,0 +1,18 @@
+require 'pry-byebug'
+
+def normalize_word(word)
+  word.strip.capitaliez
+  end
+
+  def fullname(firstname, lastname)
+  binding.pry
+    normalized_firstname =  normalize_word(firstname
+    puts "normalized firstname: #{normalized_firstname}
+    normalized_lastname = normalize_word(lastname)
+
+    return "#"{normalized_firstname} #{normalized_lastname}
+    end
+    firstname= "Michel"
+    lastname = "Delpech"
+    puts fullname(firstname, lastname)
+    #=> "Michel Delpech"
